@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Fruits</h2>
+
+    {% for i in fal %}
+        <div class="card">
+            <img src="{{ i.image.url }}" alt="{{ i.description }}">
+            <p><strong>{{ i.name }}</strong></p>
+            <p>{{ i.description }}</p>
+            <p>Size: {{ i.size }}</p>
+        </div>
+    {% empty %}
+        <p>No fruits available.</p>
+    {% endfor %}
+{% endblock %}

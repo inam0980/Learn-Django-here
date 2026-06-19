@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Welcome to My Shop</h2>
+    <p>Please choose a category:</p>
+    <a href="{% url 'clothes1' %}" class="btn">Clothes</a>
+    <a href="{% url 'fruits1' %}" class="btn">Fruits</a>
+{% endblock %}
